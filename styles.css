@@ -9,6 +9,8 @@ html {
   font-family: "Ubuntu", sans-serif;
 }
 
+/* LANDING PAGE */
+
 .landing {
   min-height: 100vh;
   background-image: url(./images/tlo.jpg);
@@ -39,6 +41,34 @@ nav {
   font-size: 1.2rem;
   letter-spacing: 2px;
 }
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: rgb(194, 194, 194);
+  border-bottom: 1px solid rgb(194, 194, 194);
+  padding-bottom: 3px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+/* SLIDER */
 
 .main-text {
   font-family: "Lobster", cursive;
@@ -85,4 +115,95 @@ nav {
 .hide span {
   display: inline-block;
   transform: translateY(100%);
+}
+
+.none {
+  display: none;
+}
+
+/* O MNIE SECTION */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1120px) {
+  .main-text {
+    font-size: 3.5rem;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .landing {
+    padding: 0;
+  }
+  nav {
+    padding: 0 5rem;
+  }
+  .main-text {
+    font-size: 3rem;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .main-text {
+    font-size: 2.5rem;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-links {
+    position: fixed;
+    left: -100%;
+    top: 15vh;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(34, 34, 34);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 1;
+  }
+  .nav-item {
+    margin: 22px 0;
+  }
+  .nav-links.active {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-text {
+    font-size: 2.05rem;
+  }
+  .intro-text {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .main-text {
+    font-size: 1.7rem;
+  }
+  .intro-text {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-text {
+    font-size: 1.4rem;
+  }
+  .intro-text {
+    font-size: 1.4rem;
+  }
 }
