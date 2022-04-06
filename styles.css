@@ -94,6 +94,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .slider {
@@ -154,7 +155,7 @@ nav {
 .image-about {
   max-width: 35vw;
   border-radius: 10px;
-  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
 }
 
 .about-p {
@@ -171,6 +172,47 @@ nav {
   background-color: rgb(34, 34, 34);
   color: #fff;
   border: none;
+}
+
+/* PORTFOLIO SECTION */
+.portfolio {
+  padding: 0px 5vw;
+}
+
+.portfolio-h1 {
+  margin-bottom: 40px;
+}
+.cards-holder {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.card {
+  margin-top: 35px;
+  margin-bottom: 70px;
+  height: 40vh;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card-img {
+  max-width: 40vw;
+  min-height: 330px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+.card-img:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.card-p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 25px 0;
 }
 
 /* MEDIA QUERIES */
