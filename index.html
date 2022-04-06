@@ -6,34 +6,10 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <title>Portfolio - Wilk Dawid</title>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"
-      integrity="sha512-1d5v+PiEBtx3YjXb8mrY+b7aPCIF1nVQcExMopDaO2ATKY3ivHre8aqSdzC6c+1RLSNdqLK+a45oz0qqxtyEWA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
   </head>
   <body>
-    <main>
-      <section class="landing">
-        <nav>
-          <h1 id="logo">Wilk Dawid</h1>
-          <ul class="nav-links">
-            <li class="nav-item"><a class="nav-link" href="#">O mnie</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </nav>
-        <h2 class="main-text">Witaj na mojej stronie!</h2>
-      </section>
-    </main>
-
-    <div class="intro">
+    <!-- INTRO SLIDER -->
+    <!-- <div class="intro">
       <div class="intro-text">
         <h1 class="hide">
           <span class="text">Zapraszam Cię</span>
@@ -46,8 +22,79 @@
         </h1>
       </div>
     </div>
-    <div class="slider"></div>
+    <div class="slider"></div> -->
 
+    <!-- LANDING PAGE -->
+    <main>
+      <section class="landing">
+        <nav>
+          <h1 id="logo">Wilk Dawid</h1>
+          <ul class="nav-links">
+            <li class="nav-item">
+              <a class="nav-link" href="#about-section">O mnie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio-section">Portfolio</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+        <h2 class="main-text">Witaj na mojej stronie!</h2>
+      </section>
+    </main>
+
+    <!-- O MNIE -->
+
+    <section class="about" id="about-section">
+      <h1 class="about-h1">Kilka słów o mnie</h1>
+      <div class="about-col">
+        <div class="left-col">
+          <img
+            src="./images/zdjecie-bieszczady.jpeg"
+            alt="Zdjęcie w górach"
+            class="image-about"
+          />
+        </div>
+        <div class="right-col">
+          <p class="about-p">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+            officiis ducimus illo hic et saepe, quisquam commodi sit vitae
+            reprehenderit recusandae? Hic omnis qui quidem aliquam, molestias,
+            animi voluptates odio doloribus, placeat dolore vero. Mollitia
+            veritatis atque modi. Magni aperiam voluptatum dolorem nihil odit a
+            sit eligendi tempora fugiat ducimus!
+          </p>
+          <p class="about-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            modi provident ratione laboriosam fuga, pariatur libero vero. Ipsa,
+            fugiat unde.
+          </p>
+          <p class="about-p">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
+            placeat non officiis quas illum suscipit provident eum velit?
+            Tempore debitis autem doloribus. Consectetur laboriosam eius ipsa
+            quidem rem eum assumenda totam illo tempora. Quibusdam, in.
+          </p>
+          <a href="" target="_blank" class="button">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio-section">
+      <h1 class="portfolio-h1">Portfolio</h1>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"
+      integrity="sha512-1d5v+PiEBtx3YjXb8mrY+b7aPCIF1nVQcExMopDaO2ATKY3ivHre8aqSdzC6c+1RLSNdqLK+a45oz0qqxtyEWA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="app.js"></script>
   </body>
 </html>

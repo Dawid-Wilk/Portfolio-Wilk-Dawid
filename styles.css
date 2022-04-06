@@ -7,6 +7,7 @@
 
 html {
   font-family: "Ubuntu", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* LANDING PAGE */
@@ -16,6 +17,9 @@ html {
   background-image: url(./images/tlo.jpg);
   background-size: cover;
   padding: 0rem 5rem;
+  box-shadow: 0px 10px 20px #888888;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 nav {
@@ -103,7 +107,7 @@ nav {
 }
 
 .intro-text {
-  color: rgb(233, 233, 233);
+  color: rgb(194, 194, 194);
   font-size: 2.5rem;
 }
 
@@ -123,6 +127,52 @@ nav {
 
 /* O MNIE SECTION */
 
+.about-h1,
+.portfolio-h1 {
+  font-family: "Lobster", cursive;
+  color: rgb(34, 34, 34);
+  padding-top: 20px;
+  font-size: 3rem;
+  height: 130px;
+  line-height: 130px;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.about-col {
+  margin: 50px 5vw;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 50px;
+}
+
+.left-col,
+.right-col {
+  position: relative;
+}
+
+.image-about {
+  max-width: 35vw;
+  border-radius: 10px;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.4);
+}
+
+.about-p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.button {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: rgb(34, 34, 34);
+  color: #fff;
+  border: none;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1120px) {
@@ -132,7 +182,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 990px) {
   .landing {
     padding: 0;
   }
@@ -142,6 +192,15 @@ nav {
   .main-text {
     font-size: 3rem;
     padding-bottom: 100px;
+  }
+  .about-col {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 80px;
+  }
+  .image-about {
+    max-width: 70vw;
   }
 }
 
@@ -205,5 +264,9 @@ nav {
   }
   .intro-text {
     font-size: 1.4rem;
+  }
+  .about-h1,
+  .portfolio-h1 {
+    font-size: 2.5rem;
   }
 }
