@@ -24,3 +24,14 @@ document.querySelectorAll(".nav-link").forEach((n) =>
     navLinks.classList.remove("active");
   })
 );
+
+// Popup navbar after 100vh
+const myNav = document.getElementById("nav");
+
+window.onscroll = function () {
+  if (window.scrollY >= window.innerHeight) {
+    myNav.classList.add("scrolled");
+  } else {
+    myNav.classList.remove("scrolled");
+  }
+};

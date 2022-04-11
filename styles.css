@@ -29,6 +29,15 @@ nav {
   min-height: 15vh;
   color: #fff;
 }
+nav.scrolled {
+  position: fixed;
+  width: 100vw;
+  background: rgb(34, 34, 34);
+  left: 0;
+  padding: 0 5vw;
+  z-index: 1;
+  transition: 0s, 0.5s linear;
+}
 
 #logo {
   font-size: 2rem;
@@ -132,7 +141,7 @@ nav {
 .portfolio-h1 {
   font-family: "Lobster", cursive;
   color: rgb(34, 34, 34);
-  padding-top: 20px;
+  padding-top: 15vh;
   font-size: 3rem;
   height: 130px;
   line-height: 130px;
@@ -141,6 +150,7 @@ nav {
 }
 
 .about-col {
+  padding-top: 15vh;
   margin: 50px 5vw;
   display: grid;
   grid-template-columns: 40% 60%;
@@ -176,17 +186,17 @@ nav {
 
 /* PORTFOLIO SECTION */
 .portfolio {
-  padding: 0px 5vw;
+  padding: 0px 2.5vw;
 }
 
 .portfolio-h1 {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 .cards-holder {
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
+  grid-gap: 100px;
 }
 
 .card {
@@ -198,10 +208,11 @@ nav {
 }
 
 .card-img {
-  max-width: 40vw;
+  max-width: 42.5vw;
   min-height: 330px;
   border-radius: 10px;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+  margin-top: 25px;
 }
 
 .card-img:hover {
@@ -210,9 +221,11 @@ nav {
 }
 
 .card-p {
+  color: rgb(34, 34, 34);
   text-align: center;
   font-size: 1.2rem;
-  margin: 25px 0;
+  margin-bottom: 30px;
+  margin-top: 15px;
 }
 
 /* MEDIA QUERIES */
@@ -243,6 +256,16 @@ nav {
   }
   .image-about {
     max-width: 70vw;
+  }
+  .cards-holder {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 70px;
+  }
+  .card-img {
+    max-width: 80vw;
+    margin-top: 60px;
   }
 }
 
