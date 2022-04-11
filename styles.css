@@ -201,7 +201,7 @@ footer a:hover {
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 100px;
+  grid-gap: 70px;
 }
 
 .card {
@@ -214,7 +214,6 @@ footer a:hover {
 
 .card-img {
   max-width: 42.5vw;
-  min-height: 330px;
   border-radius: 10px;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
   margin-top: 25px;
@@ -370,6 +369,9 @@ footer {
   }
   .intro-text {
     font-size: 1.7rem;
+  }
+  .card {
+    margin-bottom: 0;
   }
 }
 
