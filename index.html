@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- INTRO SLIDER -->
-    <div class="intro">
+    <!-- <div class="intro">
       <div class="intro-text">
         <h1 class="hide">
           <span class="text">Zapraszam Cię</span>
@@ -22,7 +22,7 @@
         </h1>
       </div>
     </div>
-    <div class="slider"></div>
+    <div class="slider"></div> -->
 
     <!-- LANDING PAGE -->
     <main>
@@ -39,7 +39,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#portfolio-section">Portfolio</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontakt">Kontakt</a>
+            </li>
           </ul>
           <div class="hamburger">
             <span class="bar"></span>
@@ -58,6 +60,7 @@
       <div class="about-col">
         <div class="left-col">
           <img
+            loading="lazy"
             src="./images/zdjecie-bieszczady.jpeg"
             alt="Zdjęcie w górach"
             class="image-about"
@@ -96,6 +99,7 @@
         <div class="card">
           <a href="https://dawid-wilk.github.io/DiceRoller/" target="_blank">
             <img
+              loading="lazy"
               title="Kliknij aby przejść do projektu!"
               src="images/proj1.png"
               alt="Projekt numer 1"
@@ -113,6 +117,7 @@
             target="_blank"
           >
             <img
+              loading="lazy"
               title="Kliknij aby przejść do projektu!"
               src="images/proj2.png"
               alt="Projekt numer 2"
@@ -127,6 +132,7 @@
         <div class="card">
           <a href="https://dawid-wilk.github.io/Countdown/" target="_blank">
             <img
+              loading="lazy"
               title="Kliknij aby przejść do projektu!"
               src="images/proj3.png"
               alt="Projekt numer 3"
@@ -140,6 +146,7 @@
         <div class="card">
           <a href="https://dawid-wilk.github.io/GuessNumber/" target="_blank">
             <img
+              loading="lazy"
               title="Kliknij aby przejść do projektu!"
               src="images/proj4.png"
               alt="Projekt numer 4"
@@ -154,6 +161,38 @@
       </div>
     </section>
 
+    <!-- KONTAKT SECTION -->
+    <section id="kontakt">
+      <h1 class="kontakt-h1">Kontakt</h1>
+      <form
+        action="https://formsubmit.co/wilkdawid.1995@gmail.com"
+        method="POST"
+        class="kontakt-form"
+      >
+        <input
+          class="kontakt-input"
+          type="text"
+          name="name"
+          placeholder="Imię"
+          required
+        />
+        <input
+          class="kontakt-input"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <textarea
+          class="kontakt-input"
+          required
+          placeholder="Treść wiadomości"
+        ></textarea>
+        <button class="button-form" type="submit">Wyślij wiadomość</button>
+      </form>
+    </section>
+
+    <footer></footer>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"
       integrity="sha512-1d5v+PiEBtx3YjXb8mrY+b7aPCIF1nVQcExMopDaO2ATKY3ivHre8aqSdzC6c+1RLSNdqLK+a45oz0qqxtyEWA=="

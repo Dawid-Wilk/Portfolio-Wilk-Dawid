@@ -138,7 +138,8 @@ nav.scrolled {
 /* O MNIE SECTION */
 
 .about-h1,
-.portfolio-h1 {
+.portfolio-h1,
+.kontakt-h1 {
   font-family: "Lobster", cursive;
   color: rgb(34, 34, 34);
   padding-top: 15vh;
@@ -176,17 +177,19 @@ nav.scrolled {
 }
 
 .button {
-  padding: 10px 20px;
+  padding: 15px 25px;
   text-decoration: none;
   border-radius: 5px;
   background-color: rgb(34, 34, 34);
   color: #fff;
   border: none;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /* PORTFOLIO SECTION */
 .portfolio {
   padding: 0px 2.5vw;
+  padding-bottom: 50px;
 }
 
 .portfolio-h1 {
@@ -228,16 +231,51 @@ nav.scrolled {
   margin-top: 15px;
 }
 
+/* KONTAKT SECTION */
+form {
+  max-width: 700px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.kontakt-input {
+  border-radius: 5px;
+  line-height: 22px;
+  font-size: 18px;
+  background-color: rgb(34, 34, 34);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+}
+
+.button-form {
+  padding: 15px 50px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: rgb(34, 34, 34);
+  color: #fff;
+  border: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+textarea {
+  height: 200px;
+  line-height: 150%;
+  resize: vertical;
+}
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1140px) {
   .main-text {
     font-size: 3.5rem;
     padding-bottom: 100px;
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1000px) {
   .landing {
     padding: 0;
   }
@@ -266,12 +304,6 @@ nav.scrolled {
   .card-img {
     max-width: 80vw;
     margin-top: 60px;
-  }
-}
-
-@media screen and (max-width: 840px) {
-  .main-text {
-    font-size: 2.5rem;
   }
   .hamburger {
     display: block;
@@ -305,7 +337,13 @@ nav.scrolled {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 860px) {
+  .main-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
   .main-text {
     font-size: 2.05rem;
   }
@@ -314,7 +352,7 @@ nav.scrolled {
   }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 600px) {
   .main-text {
     font-size: 1.7rem;
   }
@@ -323,7 +361,7 @@ nav.scrolled {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 495px) {
   .main-text {
     font-size: 1.4rem;
   }
